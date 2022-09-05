@@ -25,8 +25,8 @@ which the pixel is present )
      - Draw a small rectange to indicate the center of the circle using cv2.rectangle
      - if pixel dimension satisfy the condition → 
 > ((pixel[0] - x)^2 + (pixel[1] - y)^2) < (r^2)
-       - flag = 1, meaning the pixel is inside the detected circle
-       - else flag=0, meaning the pixel is outside the detected circle
+     - flag = 1, meaning the pixel is inside the detected circle
+     - else flag=0, meaning the pixel is outside the detected circle
    - if flag == 1 → pixel inside!
    - else→ pixel outside!
 10. Display the output image along with the original image for comparison
@@ -71,9 +71,9 @@ example: python answer.py --image circle.jpg --pixel1 50 --pixel2 50, means the 
 12. Ensure atleast one detection exist → loop over the kept indexes (after NMS)
     - extract bounding box coordinates
     - if confidence is greater than 0.8
-      - then color = green
+      - then color = green `rgb(0,255,0)`
     - else-
-      - then color = red
+      - then color = red `rgb(255,0,0)`
     - draw bounding box rectangle and write label on frame using cv2.rectangle and cv2.putText
 13. Check if the video write is None → initialize the video writer → write output frame to disk
 14. Finally, release all pointers and write a message “cleanining up” or any message to identify that the process has finished.
