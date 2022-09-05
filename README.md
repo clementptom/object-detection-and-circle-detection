@@ -23,10 +23,9 @@ which the pixel is present )
    - loop over all the detected circles
      - Draw the circles using cv2.circle
      - Draw a small rectange to indicate the center of the circle using cv2.rectangle
-     - if pixel dimension satisfy the condition → 
-> ((pixel[0] - x)^2 + (pixel[1] - y)^2) < (r^2)
-     - flag = 1, meaning the pixel is inside the detected circle
-     - else flag=0, meaning the pixel is outside the detected circle
+     - if pixel dimension satisfy the condition → '((pixel[0] - x)^2 + (pixel[1] - y)^2) < (r^2)'
+       - flag = 1, meaning the pixel is inside the detected circle
+       - else flag=0, meaning the pixel is outside the detected circle
    - if flag == 1 → pixel inside!
    - else→ pixel outside!
 10. Display the output image along with the original image for comparison
