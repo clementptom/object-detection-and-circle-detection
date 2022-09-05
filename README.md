@@ -36,6 +36,8 @@ example: python answer.py --image circle.jpg --pixel1 50 --pixel2 50, means the 
 
 ## Object Detection
 
+![output](https://user-images.githubusercontent.com/40202626/188382007-6c3e4ba4-8f05-44b0-985b-d05c53c469c6.gif)
+
 1. Firstly, important libraries are imported
    - numpy
    - argparse
